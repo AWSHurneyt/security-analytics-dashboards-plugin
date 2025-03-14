@@ -58,10 +58,10 @@ import { LogCategoryOptionView } from '../components/Utility/LogCategoryOption';
 import { getLogTypeLabel } from '../pages/LogTypes/utils/helpers';
 import { euiThemeVars } from '@osd/ui-shared-deps/theme';
 import dateMath from '@elastic/datemath';
-import { parse, View } from 'vega/build-es5/vega.js';
-import { compile } from 'vega-lite';
+import { parse, View } from 'vega';
+import { compile } from 'vega-lite/src';
 import { Handler } from 'vega-tooltip';
-import { expressionInterpreter as vegaExpressionInterpreter } from 'vega-interpreter/build/vega-interpreter';
+import { expressionInterpreter as vegaExpressionInterpreter } from 'vega-interpreter/build/vega-interpreter.module';
 import {
   getBreadCrumbsSetter,
   getBrowserServices,
